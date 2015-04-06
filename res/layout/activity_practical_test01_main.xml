@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ro.pub.cs.systems.pdsd.lab04.contactsmanager.graphicuserinterface.ContactsManagerActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment1"
+        android:name="ro.pub.cs.systems.pdsd.practicaltest01.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/top_frame" />
+
+    <FrameLayout
+        android:id="@+id/fragment2"
+        android:name="ro.pub.cs.systems.pdsd.practicaltest01.DownFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/down_layout" />
+
+    <Button
+        android:id="@+id/navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Navigate to secondary activity" />
+
+</LinearLayout>
